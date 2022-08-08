@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-api-rest-com-express-e-mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucashtw/Nodejs-API-Rest-com-Express-e-MongoDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucashtw/Nodejs-API-Rest-com-Express-e-MongoDB/issues"
+  },
+  "homepage": "https://github.com/lucashtw/Nodejs-API-Rest-com-Express-e-MongoDB#readme"
+}
