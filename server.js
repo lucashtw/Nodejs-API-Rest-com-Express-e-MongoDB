@@ -1,12 +1,21 @@
-const http = require("http")
+const http = require("http");
+// const http = (...args) => import('http').then(({default: http}) => http(...args));
 // import { createServer } from "http";
 const port = 3000;
 
+const rotas = {
+    '/': 'Curso de Node',
+    '/livros': 'Entrei na pag de livros',
+    '/autores': 'Listagem de autores',
+    '/editora': 'Pag de Editora',
+    '/sobre': 'Inf sobre o projeto'
+}
+
 const server = http.createServer((req,res)=>{
     res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.end('Curso de Node');
+    res.end(rotas[req.url]);
 })
 
-server,listen(port,()=>{
+server.listen(port,()=>{
     console.log(`Servidor escutando em http://localhost:${port}`)
 })
